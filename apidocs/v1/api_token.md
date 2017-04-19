@@ -1,6 +1,7 @@
 ## API token [/api/v1/api-tokens]
-
+Returns updated refresh token and new api token(for web only applications).
 ### Get API token [POST]
+
 + Request Successful for non web application (application/vnd.api+json)
     + Headers
     

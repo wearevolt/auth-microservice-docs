@@ -1,0 +1,5 @@
+#! /bin/bash
+set -e
+
+mkdir -p tmp
+cat apiary.manifest | grep -v '#' | xargs -I '{}' sh -c 'cat {} ; echo "" ' > tmp/apidocs.md

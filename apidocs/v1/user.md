@@ -1,8 +1,6 @@
 ## Registration [/api/v1/users]
-
-### Register a user [POST]
-
 Registers a new user with given emails, password and fullname.
+### Register a user [POST]
 
 + Request (application/vnd.api+json)
     + Attributes
@@ -10,7 +8,7 @@ Registers a new user with given emails, password and fullname.
             + type: `users` (required)
             + attributes (required):
                 + fullname: `Test User`        (string, required) - User's fullname
-                + emails:    [`foo@bar.com`]   (array of strings, required) - User's emails)
+                + emails:    [`foo@bar.com`]   (string, required) - User's emails)
                 + password: `password`         (string, required) - User's password
                 
 + Response 201 (application/vnd.api+json; charset=utf-8)

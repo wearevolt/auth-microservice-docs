@@ -1,8 +1,6 @@
 ## Authentication [/api/v1/authentication]
-
-### Sign In [POST]
-
 Sign in using email, password and device type. Responds with refresh token.
+### Sign In [POST]
 
 + Request Successful sign in for non web application (application/vnd.api+json)
     + Attributes
