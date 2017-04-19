@@ -1,0 +1,6 @@
+.idea
+.env
+.codeclimate.yml
+.DS_store
+tmp
+node_modules
