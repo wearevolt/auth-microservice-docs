@@ -2,7 +2,7 @@
 
 ### Register a user [POST]
 
-Register a new user with given emails, password and fullname.
+Registers a new user with given emails, password and fullname.
 
 + Request (application/vnd.api+json)
     + Attributes
