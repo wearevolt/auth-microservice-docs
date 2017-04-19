@@ -1,6 +1,6 @@
 ## Authentication [/api/v1/authentication]
 
-### Register a user [POST]
+### Sign In [POST]
 
 Sign in using email, password and device type. Responds with refresh token.
 
