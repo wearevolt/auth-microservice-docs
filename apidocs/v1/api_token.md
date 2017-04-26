@@ -17,13 +17,13 @@ Returns updated refresh token and new api token(for web only applications).
             RefreshToken: <Encoded Refresh Token> - should return updated refresh token for non web application
             
     + Attributes (object)
-            + data (object)
-                + id (string)
-                + type: `api-tokens`
-                + attributes (object)
-                    + value      (string) - API token string
-                    + issued-at  (string) - issued time
-                    + expires-at (string) - expiration time
+        + data (object)
+            + id (string)
+            + type: `api-tokens`
+            + attributes (object)
+                + value      (string) - API token string
+                + `issued-at`  (string) - issued time
+                + `expires-at` (string) - expiration time
 
 + Request Successful for web application (application/vnd.api+json)
     + Headers
@@ -41,10 +41,10 @@ Returns updated refresh token and new api token(for web only applications).
             Set-Cookie:  ApiToken=<Encoded Api Token>; HttpOnly
             
     + Attributes (object)
-            + data (object)
-                + id (string)
-                + type: `api-tokens`
-                + attributes (object)
-                    + value      (string) - API token string
-                    + issued-at  (string) - issued time
-                    + expires-at (string) - expiration time
+        + data (object)
+            + id (string)
+            + type: `api-tokens`
+            + attributes (object)
+                + value      (string) - API token string
+                + `issued-at`  (string) - issued time
+                + `expires-at` (string) - expiration time

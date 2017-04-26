@@ -7,8 +7,8 @@ Confirm email address by token.
         + data (required)
             + type: `emails` (string, required)
             + attributes (object)
-                + confirmation-token: `token` (string) - Confirmation token string
-                + device-type: `web`          (string) - Device type  
+                + `confirmation-token`: `token` (string) - Confirmation token string
+                + `device-type`: `web`          (string) - Device type  
 
 + Response 200 (application/json; charset=utf-8)
     + Headers
@@ -16,20 +16,20 @@ Confirm email address by token.
             Set-Cookie:  RefreshToken=<Encoded Refresh Token>; HttpOnly - return refresh token for web applications in cookies
 
     + Attributes (object)
-            + data (object)
-                + id (string)
-                + type: `emails`
-                + attributes (object)
-                    + value      (string)  - email value
-                    + confirmed  (boolean) - confirmed status
+        + data (object)
+            + id (string)
+            + type: `emails`
+            + attributes (object)
+                + value      (string)  - email value
+                + confirmed  (boolean) - confirmed status
 
-+ Request ror non web applications (application/vnd.api+json)
++ Request for non web applications (application/vnd.api+json)
     + Attributes
         + data (required)
             + type: `emails` (string, required)
             + attributes (object)
-                + confirmation-token: `token` (string) - Confirmation token string
-                + device-type: `curl`         (string) - Device type  
+                + `confirmation-token`: `token` (string) - Confirmation token string
+                + `device-type`: `curl`         (string) - Device type  
 
 + Response 200 (application/json; charset=utf-8)
     + Headers
@@ -37,20 +37,20 @@ Confirm email address by token.
             RefreshToken: <Encoded Refresh Token> - return refresh token for non web application in headers
 
     + Attributes (object)
-            + data (object)
-                + id (string)
-                + type: `emails`
-                + attributes (object)
-                    + value      (string)  - email value
-                    + confirmed  (boolean) - confirmed status
+        + data (object)
+            + id (string)
+            + type: `emails`
+            + attributes (object)
+                + value      (string)  - email value
+                + confirmed  (boolean) - confirmed status
                     
 + Request failed (application/vnd.api+json)
     + Attributes
         + data (required)
             + type: `emails` (string, required)
             + attributes (object)
-                + confirmation-token: `invalid token` (string) - Confirmation token string
-                + device-type: `web`                  (string) - Device type
+                + `confirmation-token`: `invalid token` (string) - Confirmation token string
+                + `device-type`: `web`                  (string) - Device type
                   
 + Response 401 (application/json; charset=utf-8)
     + Attributes (object)

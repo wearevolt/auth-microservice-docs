@@ -58,7 +58,7 @@ Sign in using email, password and device type. Responds with refresh token.
             + attributes (required)
                 + email:     `wrong@email.com`      (string, required) - User's email
                 + password:  `invalidpassword`  (string, required) - User's password
-                + device_type: `curl`
+                + `device-type`: `curl`
 
 + Response 401 (application/json; charset=utf-8)
     + Attributes (object)
