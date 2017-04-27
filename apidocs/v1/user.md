@@ -49,7 +49,7 @@ Request reset password token to specified email.
         + data (required)
             + type: `users` (string, required)
             + attributes (object)
-                + email: `qwe@rty.com` (string) - Email value
+                + `email-value`: `qwe@rty.com` (string) - Email value
 
 + Response 204 (application/json; charset=utf-8)
 
