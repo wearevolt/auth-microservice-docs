@@ -1,3 +1,73 @@
+## Email creation [/api/v1/emails]
+Add new email address for requested user and send confirmation message on it.
+### Add new email address [POST]
+
++ Request for web applications (application/vnd.api+json)
+    + Headers
+
+            Authorization:  Bearer <Api Token>
+
+    + Attributes
+        + data (required)
+            + type: `emails` (string, required)
+            + attributes (object)
+                + `value`: `foo@bar.com` (string) - Email address string  
+
++ Response 200 (application/json; charset=utf-8)
+
+    + Attributes (object)
+        + data (object)
+            + id (string)
+            + type: `emails`
+            + attributes (object)
+                + value      (string)  - email value
+                + confirmed  (boolean) - confirmed status
+                
++ Request failed (application/vnd.api+json)
+    + Attributes
+        + data (required)
+            + type: `emails` (string, required)
+            + attributes (object)
+                + `value`: `invalid email` (string) - Wrong Email address string  
+                  
++ Response 422 (application/json; charset=utf-8)
+    + Attributes (object)
+        + errors (array)
+            + (object)
+                + status: 422 (number)
+                + title: `Error title` (string)
+                + detail: `Error details` (string)
+                + code: `Error code` (string)
+                + source: `Error source` (string)
+
+## Remove associated email for requested user [/api/v1/emails/{uuid}]
+Remove requested user's email by uuid.
++ Parameters
+    + uuid (required, integer, `d7a836aa-32bd-4318-a60d-a01f46f72176`)
+    
+### Delete email address [DELETE]
+
++ Request for web applications (application/vnd.api+json)
+    + Headers
+
+            Authorization:  Bearer <Api Token>
+
++ Response 204 (application/json; charset=utf-8)
+
++ Request failed (application/vnd.api+json)
+    
+            Authorization:  Bearer <Api Token>
+
++ Response 403 (application/json; charset=utf-8)
+    + Attributes (object)
+        + errors (array)
+            + (object)
+                + status: 403 (number)
+                + title: `Error title` (string)
+                + detail: `Error details` (string)
+                + code: `Error code` (string)
+                + source: `Error source` (string)
+
 ## Email confirmation [/api/v1/emails/confirm]
 Confirm email address by token.
 ### Confirm [POST]
