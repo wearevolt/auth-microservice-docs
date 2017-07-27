@@ -1,4 +1,4 @@
-## Authentication [/api/v1/authentication]
+## Authentication [/api/v1/authentications]
 Sign in using email, password and device type. Responds with refresh token.
 ### Sign In [POST]
 
@@ -66,3 +66,14 @@ Sign in using email, password and device type. Responds with refresh token.
             + (object)
                 + status: 401 (number)
                 + title: `Wrong email or password given` (string)
+
+## End session [/api/v1/authentications ]
+Remove token JTI from Redis.
+### Withdraw Refresh token [DELETE]
+
++ Request (application/vnd.api+json)
+    + Headers
+    
+            Authorization: Bearer <Encoded Refresh Token>
+        
++ Response 204 (application/json; charset=utf-8)
