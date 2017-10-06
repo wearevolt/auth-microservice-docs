@@ -1,4 +1,4 @@
-## Admin Facebooks [/api/v1/admin/facebooks]
+## Admin Googles [/api/v1/admin/googles]
 
 ###Relations
 
@@ -6,7 +6,7 @@
 + user
 + email
 
-### Get All Facebooks [GET /api/v1/admin/facebooks]
+### Get All Googles [GET /api/v1/admin/googles]
 
 + Request (application/vnd.api+json)
 
@@ -21,8 +21,8 @@
                     [
                         {
                             "id"=>"42b6cfc2-5ee9-45b7-a031-aae5ffee3718",
-                            "type"=>"facebooks",
-                            "links"=>{"self"=>"http://www.example.com/api/v1/admin/facebooks/42b6cfc2-5ee9-45b7-a031-aae5ffee3718"},
+                            "type"=>"googles",
+                            "links"=>{"self"=>"http://www.example.com/api/v1/admin/googles/42b6cfc2-5ee9-45b7-a031-aae5ffee3718"},
                             "attributes"=>{"uid"=>"42b6cfc2-5ee9-45b7-a031-aae5ffee3718"},
                             "relationships"=>
                                 {
@@ -30,8 +30,8 @@
                                         {
                                             "links"=>
                                                 {
-                                                    "self"=>"http://www.example.com/api/v1/admin/facebooks/42b6cfc2-5ee9-45b7-a031-aae5ffee3718/relationships/user",
-                                                    "related"=>"http://www.example.com/api/v1/admin/facebooks/42b6cfc2-5ee9-45b7-a031-aae5ffee3718/user"
+                                                    "self"=>"http://www.example.com/api/v1/admin/gooles/42b6cfc2-5ee9-45b7-a031-aae5ffee3718/relationships/user",
+                                                    "related"=>"http://www.example.com/api/v1/admin/googles/42b6cfc2-5ee9-45b7-a031-aae5ffee3718/user"
                                                 }
                                             }
                                         }
@@ -39,16 +39,16 @@
                                         {
                                             "links"=>
                                                 {
-                                                    "self"=>"http://www.example.com/api/v1/admin/facebooks/42b6cfc2-5ee9-45b7-a031-aae5ffee3718/relationships/email",
-                                                    "related"=>"http://www.example.com/api/v1/admin/facebooks/42b6cfc2-5ee9-45b7-a031-aae5ffee3718/email"
+                                                    "self"=>"http://www.example.com/api/v1/admin/googles/42b6cfc2-5ee9-45b7-a031-aae5ffee3718/relationships/email",
+                                                    "related"=>"http://www.example.com/api/v1/admin/googles/42b6cfc2-5ee9-45b7-a031-aae5ffee3718/email"
                                                 }
                                             }
                                         }    
                                 },
                         {
                             "id"=>"7f5e1704-3c7b-4357-916d-d4b76c42efa1",
-                            "type"=>"facebooks",
-                            "links"=>{"self"=>"http://www.example.com/api/v1/admin/facebooks/7f5e1704-3c7b-4357-916d-d4b76c42efa1"},
+                            "type"=>"googles",
+                            "links"=>{"self"=>"http://www.example.com/api/v1/admin/googles/7f5e1704-3c7b-4357-916d-d4b76c42efa1"},
                             "attributes"=>{"uid"=>"7f5e1704-3c7b-4357-916d-d4b76c42efa1"},
                             "relationships"=>
                                 {
@@ -56,8 +56,8 @@
                                         {
                                             "links"=>
                                                 {
-                                                    "self"=>"http://www.example.com/api/v1/admin/facebooks/7f5e1704-3c7b-4357-916d-d4b76c42efa1/relationships/user",
-                                                    "related"=>"http://www.example.com/api/v1/admin/facebooks/7f5e1704-3c7b-4357-916d-d4b76c42efa1/user"
+                                                    "self"=>"http://www.example.com/api/v1/admin/googles/7f5e1704-3c7b-4357-916d-d4b76c42efa1/relationships/user",
+                                                    "related"=>"http://www.example.com/api/v1/admin/googles/7f5e1704-3c7b-4357-916d-d4b76c42efa1/user"
                                                 }
                                             }
                                         }
@@ -65,16 +65,16 @@
                                         {
                                             "links"=>
                                                 {
-                                                    "self"=>"http://www.example.com/api/v1/admin/facebooks/7f5e1704-3c7b-4357-916d-d4b76c42efa1/relationships/email",
-                                                    "related"=>"http://www.example.com/api/v1/admin/facebooks/7f5e1704-3c7b-4357-916d-d4b76c42efa1/email"
+                                                    "self"=>"http://www.example.com/api/v1/admin/googles/7f5e1704-3c7b-4357-916d-d4b76c42efa1/relationships/email",
+                                                    "related"=>"http://www.example.com/api/v1/admin/googles/7f5e1704-3c7b-4357-916d-d4b76c42efa1/email"
                                                 }
                                             }
                                         }    
                                 },
                         {
                             "id"=>"ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4",
-                            "type"=>"facebooks",
-                            "links"=>{"self"=>"http://www.example.com/api/v1/admin/facebooks/ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4"},
+                            "type"=>"googles",
+                            "links"=>{"self"=>"http://www.example.com/api/v1/admin/googles/ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4"},
                             "attributes"=>{"uid"=>"ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4"},
                             "relationships"=>
                                 {
@@ -82,8 +82,8 @@
                                         {
                                             "links"=>
                                                 {
-                                                    "self"=>"http://www.example.com/api/v1/admin/facebooks/ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4/relationships/user",
-                                                    "related"=>"http://www.example.com/api/v1/admin/facebooks/ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4/user"
+                                                    "self"=>"http://www.example.com/api/v1/admin/googles/ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4/relationships/user",
+                                                    "related"=>"http://www.example.com/api/v1/admin/googles/ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4/user"
                                                 }
                                             }
                                         }
@@ -91,8 +91,8 @@
                                      {
                                          "links"=>
                                              {
-                                                 "self"=>"http://www.example.com/api/v1/admin/facebooks/ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4/relationships/email",
-                                                 "related"=>"http://www.example.com/api/v1/admin/facebooks/ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4/email"
+                                                 "self"=>"http://www.example.com/api/v1/admin/googles/ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4/relationships/email",
+                                                 "related"=>"http://www.example.com/api/v1/admin/googles/ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4/email"
                                              }
                                          }
                                      }   
@@ -100,10 +100,10 @@
                     ]
             }
 
-### Get Facebook [GET /api/v1/admin/facebooks/{facebook_id}]
+### Get Google [GET /api/v1/admin/googles/{google_id}]
 
 + Parameters
-    + `facebook_id`: 1 (string) - Facebook Id
+    + `google_id`: 1 (string) - Google Id
 
 + Request (application/vnd.api+json)
 
@@ -117,8 +117,8 @@
               "data"=>
                   {
                       "id"=>"42afb9e3-c5bb-4c0a-ac3c-8b4fd388965d",
-                      "type"=>"facebooks",
-                      "links"=>{"self"=>"http://www.example.com/api/v1/admin/emails/42afb9e3-c5bb-4c0a-ac3c-8b4fd388965d"},
+                      "type"=>"googles",
+                      "links"=>{"self"=>"http://www.example.com/api/v1/admin/googles/42afb9e3-c5bb-4c0a-ac3c-8b4fd388965d"},
                       "attributes"=>{"uid"=>"ce3a6cbe-ba6b-4b01-a6d9-b8214ebb63f4"},
                       "relationships"=>
                           {
@@ -126,26 +126,26 @@
                                   {
                                       "links"=>
                                           {
-                                              "self"=>"http://www.example.com/api/v1/admin/facebooks/42afb9e3-c5bb-4c0a-ac3c-8b4fd388965d/relationships/user",
-                                              "related"=>"http://www.example.com/api/v1/admin/fecabooks/42afb9e3-c5bb-4c0a-ac3c-8b4fd388965d/user"
+                                              "self"=>"http://www.example.com/api/v1/admin/googles/42afb9e3-c5bb-4c0a-ac3c-8b4fd388965d/relationships/user",
+                                              "related"=>"http://www.example.com/api/v1/admin/googles/42afb9e3-c5bb-4c0a-ac3c-8b4fd388965d/user"
                                           }
                                   }
-                              "facebook"=>
+                              "email"=>
                                   {
                                       "links"=>
                                           {
-                                              "self"=>"http://www.example.com/api/v1/admin/facebooks/42afb9e3-c5bb-4c0a-ac3c-8b4fd388965d/relationships/email",
-                                              "related"=>"http://www.example.com/api/v1/admin/facebooks/42afb9e3-c5bb-4c0a-ac3c-8b4fd388965d/email"
+                                              "self"=>"http://www.example.com/api/v1/admin/googles/42afb9e3-c5bb-4c0a-ac3c-8b4fd388965d/relationships/email",
+                                              "related"=>"http://www.example.com/api/v1/admin/googles/42afb9e3-c5bb-4c0a-ac3c-8b4fd388965d/email"
                                           }
                                   }    
                           }
                   }
           }
 
-### Delete Facebook [DELETE /api/v1/admin/facebooks/{facebook_id}]
+### Delete Google [DELETE /api/v1/admin/googles/{google_id}]
 
 + Parameters
-    + facebook_id: 1 (string) - Facebook Id
+    + google_id: 1 (string) - Google Id
 
 + Request (application/vnd.api+json)
 

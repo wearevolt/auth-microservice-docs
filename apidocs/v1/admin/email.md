@@ -5,6 +5,7 @@
 ###has_one
 + user
 + facebook
++ google
 
 ### Get All Emails [GET /api/v1/admin/emails]
 

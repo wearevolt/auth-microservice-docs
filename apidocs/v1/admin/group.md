@@ -101,7 +101,7 @@
             {
                 "data": 
                     {
-                        "type": "access_profiles",
+                        "type": "groups",
                         "attributes": 
                             {
                                "name": 'group name',
@@ -148,7 +148,7 @@
             {
                 "data": 
                     {
-                        "type": "access_profiles",
+                        "type": "groups",
                         "attributes": 
                             {
                                 "name": 'group name qwe',
